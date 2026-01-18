@@ -160,36 +160,42 @@ MONGO_URI=mongodb://127.0.0.1:27017/taskmanager
 Follow the steps below to run the project locally.
 
 1. Install dependencies
+```
 npm install
+```
 
 2. Ensure MongoDB is running locally
 
-MongoDB should be running as a local service on port 27017.
+- MongoDB should be running as a local service on port 27017.
 
 3. Start the backend server
+```
 node server.js
-
+```
 
 Expected output:
-
+```
 🚀 Server running on port 3000
 ✅ MongoDB connected
+```
 
 4. Open the frontend
 
-Open the following file in a web browser:
+- Open the following file in a web browser:
 
+```
 public/index.html
+```
 
-Error Handling
+## Error Handling
 
 The backend includes basic error handling to ensure stable behavior:
 
-Invalid request data returns 400 Bad Request
+- Invalid request data returns 400 Bad Request
 
-Requests for non-existing resources return 404 Not Found
+- Requests for non-existing resources return 404 Not Found
 
-Server-side issues return 500 Internal Server Error
+- Server-side issues return 500 Internal Server Error
 
 This ensures predictable API behavior.
 
